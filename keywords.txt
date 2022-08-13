@@ -1,0 +1,46 @@
+
+#######################################
+# Syntax Coloring Map
+#######################################
+
+RMDX	KEYWORD1
+
+reset	                KEYWORD2
+enable	                KEYWORD2
+disable	                KEYWORD2
+getAccelerationCommand	KEYWORD2
+getPosition             KEYWORD2
+setSpeed                KEYWORD2
+setTorque	        KEYWORD2
+
+
+READ_PID                            LITERAL1
+WRITE_PID_RAM                       LITERAL1
+WRITE_PID_ROM                       LITERAL1
+READ_ACCEL                          LITERAL1
+WRITE_ACCEL                         LITERAL1
+READ_POS                            LITERAL1
+READ_RAW_POS                        LITERAL1
+READ_HOME_POS                       LITERAL1
+WRITE_ENCODER_ZERO                  LITERAL1
+WRITE_ENCODER_CURRENT_POS_AS_ZERO   LITERAL1
+READ_MULTITURN_ANGLE                LITERAL1
+READ_MOTOR_STATUS1                  LITERAL1
+READ_MOTOR_STATUS2                  LITERAL1
+READ_MOTOR_STATUS3                  LITERAL1
+SHUTDOWN                            LITERAL1
+STOP                                LITERAL1
+TORQUE_COMMAND                      LITERAL1
+SPEED_COMMAND                       LITERAL1
+ABS_POS_COMMAND                     LITERAL1
+OPERATING_MODE                      LITERAL1
+POWER_ACQUISITION                   LITERAL1
+RESET                               LITERAL1
+BRAKE_RELEASE                       LITERAL1
+BRAKE_LOCK                          LITERAL1
+MOTOR_DISABLE                       LITERAL1
+MOTOR_ENABLE                        LITERAL1
+RUNTIME_READ                        LITERAL1
+SOFTWARE_VERSION                    LITERAL1
+COMM_INTERRUPT_SAFETY               LITERAL1
+BAUD_RATE                           LITERAL1
