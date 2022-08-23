@@ -18,7 +18,7 @@ CANMessage createMessage(byte const& motorId, byte const& command, long const& d
 
 int32_t messageToInt32(CANMessage const& message)
 {
-    return message.data[4] + (message.data[5] >> 8) +  (message.data[6] >> 16) +  (message.data[7] >> 24);
+    return message.data[4] + (message.data[5] >> 8) +  (int32_t(message.data[6]) >> 16) +  (int32_t(message.data[7]) >> 24);
 }
 
 RMDX::RMDX(ACAN2515 *canDriver):
@@ -38,13 +38,13 @@ void RMDX::reset(byte const& motorId)
 
 void RMDX::enable(byte const& motorId)
 {
-    CANMessage message = createMessage(motorId, MyActuator::commands::MOTOR_ENABLE);
+    CANMessage message = createMessage(motorId, MyActuator::commands::ENABLE);
     canReadWrite(message);
 }
 
 void RMDX::disable(byte const& motorId)
 {
-    CANMessage message = createMessage(motorId, MyActuator::commands::MOTOR_DISABLE);
+    CANMessage message = createMessage(motorId, MyActuator::commands::SHUTDOWN);
     canReadWrite(message);
 }
 
